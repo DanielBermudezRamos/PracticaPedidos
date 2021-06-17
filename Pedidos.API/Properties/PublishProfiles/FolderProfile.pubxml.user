@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\pedidos.API</_PublishTargetUrl>
+    <History>True|2021-06-11T01:49:09.7470446Z;False|2021-06-10T22:15:45.3620503-03:00;True|2021-06-10T22:00:22.4096823-03:00;True|2021-06-10T21:15:28.3153422-03:00;</History>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="PedidoContext">
+      <Value>Server=%28local%29\SQLEXPRESS%3bDatabase=PedidosDB%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Pedidos.BL.Data.Authentication.ApplicationDbContext">
+      <Value>Server=%28local%29\SQLEXPRESS%3bDatabase=PedidosDB%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </EFMigrations>
+    <EFMigrations Include="Pedidos.BL.Data.PedidosDBContext">
+      <Value>Server=%28local%29\SQLEXPRESS%3bDatabase=PedidosDB%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

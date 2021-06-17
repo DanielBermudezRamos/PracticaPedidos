@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row my-3">
+    <div class="col">
+      <h3>Pedidos</h3>
+    </div>
+    <div class="col">
+      <button class="btn btn-primary float-end"
+        routerLink="crearpedido">
+        Nuevo Pedido
+      </button>
+    </div>
+  </div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <!--th>ID</th-->
+        <th>Cliente</th>
+        <th>Descripción</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of pedido | paginate:pagSize:pagNumber:search">
+        <!--td>{{item.id}}</td-->
+        <td>{{item.cliente}}</td>
+        <td>{{item.descripcion}}</td>
+        <td>
+          <a [routerLink]="['/editarpedido', item.id]" ><i class="far fa-edit fa-lg text-info"
+                    style="cursor: pointer;" ></i>
+                &nbsp; &nbsp;
+                  <i class="far fa-trash-alt fa-lg text-danger"
+                    style="cursor: pointer;" ></i></a>
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <label>({{pagNumber}}/{{pagSize}})</label>
+          <nav aria-label="...">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <button class="page-link" (click)="prevPag()"
+                    [disabled]="pagNumber <= 0">&laquo;</button>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <button class="page-link" (click)="nextPag()"
+                  [disabled]="(pedido | paginate:pagSize:pagNumber:search).length === 0">&raquo;</button>
+              </li>
+            </ul>
+          </nav>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" class="form-control-mb-2"
+              placeholder="buscar"
+              #txtSearch (keyup)="onSearch(txtSearch.value)" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

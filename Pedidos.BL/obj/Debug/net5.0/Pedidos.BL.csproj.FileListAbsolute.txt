@@ -1,0 +1,15 @@
+C:\cursos\angular\Pedidos\Pedidos.BL\bin\Debug\net5.0\Pedidos.BL.deps.json
+C:\cursos\angular\Pedidos\Pedidos.BL\bin\Debug\net5.0\Pedidos.BL.runtimeconfig.json
+C:\cursos\angular\Pedidos\Pedidos.BL\bin\Debug\net5.0\Pedidos.BL.runtimeconfig.dev.json
+C:\cursos\angular\Pedidos\Pedidos.BL\bin\Debug\net5.0\Pedidos.BL.dll
+C:\cursos\angular\Pedidos\Pedidos.BL\bin\Debug\net5.0\ref\Pedidos.BL.dll
+C:\cursos\angular\Pedidos\Pedidos.BL\bin\Debug\net5.0\Pedidos.BL.pdb
+C:\cursos\angular\Pedidos\Pedidos.BL\obj\Debug\net5.0\Pedidos.BL.csprojAssemblyReference.cache
+C:\cursos\angular\Pedidos\Pedidos.BL\obj\Debug\net5.0\Pedidos.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\cursos\angular\Pedidos\Pedidos.BL\obj\Debug\net5.0\Pedidos.BL.AssemblyInfoInputs.cache
+C:\cursos\angular\Pedidos\Pedidos.BL\obj\Debug\net5.0\Pedidos.BL.AssemblyInfo.cs
+C:\cursos\angular\Pedidos\Pedidos.BL\obj\Debug\net5.0\Pedidos.BL.csproj.CoreCompileInputs.cache
+C:\cursos\angular\Pedidos\Pedidos.BL\obj\Debug\net5.0\Pedidos.BL.dll
+C:\cursos\angular\Pedidos\Pedidos.BL\obj\Debug\net5.0\ref\Pedidos.BL.dll
+C:\cursos\angular\Pedidos\Pedidos.BL\obj\Debug\net5.0\Pedidos.BL.pdb
+C:\cursos\angular\Pedidos\Pedidos.BL\obj\Debug\net5.0\Pedidos.BL.genruntimeconfig.cache

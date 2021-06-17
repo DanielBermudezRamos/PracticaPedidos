@@ -1,0 +1,34 @@
+<h3 class="text-center">{{accion}} Comentarios</h3>
+
+<form [formGroup]="form" (ngSubmit)="save()">
+  <div class="input-group my-3">
+    <span class="input-group-text">
+      <i class="fas fa-user-circle"
+          [class.green-icon]="this.form.get('nombre')?.valid"
+          [class.red-icon]="this.form.get('nombre')?.invalid && this.form.get('nombre')?.touched"> </i>
+          Nombre</span>
+    <input class="form-control" formControlName="nombre" aria-label="nombre" />
+  </div>
+  <div class="input-group">
+    <span class="input-group-text">
+      <i class="fas fa-credit-card"
+          [class.green-icon]="this.form.get('descripcion')?.valid"
+          [class.red-icon]="this.form.get('descripcion')?.invalid && this.form.get('descripcion')?.touched"> </i>
+      Descripción
+    </span>
+    <input class="form-control" formControlName="descripcion" aria-label="descripcion" />
+  </div>
+  <div class="input-group">
+    <span class="input-group-text">
+      <i class="fas fa-credit-card"
+          [class.green-icon]="this.form.get('precio')?.valid"
+          [class.red-icon]="this.form.get('precio')?.invalid && this.form.get('precio')?.touched"> </i>
+      Precio
+    </span>
+    <input class="form-control" formControlName="precio" aria-label="precio" />
+  </div>
+  <div class="my-3">
+    <button type="submit" class="btn btn-primary float-end" [disabled]="form.invalid">Aceptar</button>
+    <button type="button" routerLink="/lista-pedido" class="btn btn-outline-danger">Volver</button>
+  </div>
+</form>
